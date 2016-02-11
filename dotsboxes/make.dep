@@ -1,0 +1,8 @@
+computer.o: computer.cpp computer.h player.h grid.h box.h
+human.o: human.cpp human.h player.h grid.h box.h
+game.o: game.cpp game.h human.h player.h grid.h box.h computer.h
+box.o: box.cpp box.h
+player.o: player.cpp player.h grid.h box.h
+dotsAndBoxes.o: dotsAndBoxes.cpp game.h human.h player.h grid.h box.h \
+ computer.h calc.h
+grid.o: grid.cpp grid.h box.h
